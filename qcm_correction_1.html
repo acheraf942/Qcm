@@ -1,0 +1,275 @@
+<html>
+<head>
+<title>QCM correction</title>
+<link rel="stylesheet" type="text/css" href="cssindex.css">
+<script language="javascript">
+function calcul()
+{
+  
+   nombreDeQuestion=9;
+   nom=new Array();
+   nomLength=new Array();
+   point=0;
+   for(n=0;n<=(nombreDeQuestion);n++)
+   {
+      nom[n]=document.getElementsByName("rep_"+n);
+      nomLength[n]=nom[n].length;
+      for(q=0;q<=(nomLength[n]-1);q++)
+      {
+        if(nom[n][q].checked==true)
+        {point=point+eval(nom[n][q].value);} 
+        else
+        {point=point;}
+
+      } 
+   }
+   var nom=document.getElementById("prenom").value +",";
+   document.form_qz.txtNb.value=nom+" votre score est de "+point+"/10";
+}
+</script>
+</head>
+<body>
+  <center>
+    <h1 class="titre1">
+      QCM CORRECTION
+    </h1>
+  </center>
+<div class="global">
+    
+<div class="explication">
+  </div>
+</div>
+<form name="form_qz">
+  <div class="question">
+    <li class="q1">
+      <h3 class="titrequestion">
+        question 1: Quel est le vrais nom de SPIDER-MAN ?
+      </h3>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_1" id="q1c1" value="0">
+        <label for="q1c1">1</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_1" id="q1c2" value="0">
+        <label for="q1c2">2</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_1" id="q1c3" value="0">
+        <label for="q1c3">3</label> 
+      </ul>
+      <ul>
+        <input type="checkbox" class="grepquestion" name="rep_1" id="q1c4" value="1" checked>
+        <label for="q1c4">4</label> 
+      </ul>
+    </li>
+  </div>
+  <div class="question">
+    <li class="q2">
+      <h3 class="titrequestion">
+      question 2: Quelles sont les couleurs de son premier costume ?
+      </h3>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_2" id="q2c1" value="0">
+        <label for="q2c1">1</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="grepquestion" name="rep_2" id="q2c2" value="1" checked>
+        <label for="q2c2">2</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_2" id="q2c3" value="0">
+        <label for="q2c3">3</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_2" id="q2c4" value="0">
+        <label for="q2c4">4</label>
+      </ul>
+    </li>
+  </div>
+  <div class="question">
+    <li class="q3">
+      <h3 class="titrequestion">
+        question 3: Quelles sont les couleurs de son premier costume ?
+      </h3 >
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_3" id="q3c1" value="0">
+        <label for="q3c1">1</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="grepquestion" name="rep_3" id="q3c2" value="1" checked>
+        <label for="q3c2">2</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_3" id="q3c3" value="0">
+        <label for="q3c3">3</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_3" id="q3c4" value="0">
+        <label for="q3c4">4</label>
+      </ul>
+    </li>
+  </div>
+  <div class="question">
+    <li class="q4">
+      <h3 class="titrequestion">
+        question 4: Comment se nomme le symbiot qui se lie a lui et lui donne son costume noir ?
+      </h3>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_4" id="q4c1" value="0">
+        <label for="q4c1">1</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_4" id="q4c2" value="0">
+        <label for="q4c2">2</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="grepquestion" name="rep_4" id="q4c3" value="1" checked>
+        <label for="q4c3">3</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_4" id="q4c4" value="0">
+        <label for="q4c4">4</label>
+      </ul>
+    </li>
+  </div>
+  <div class="question">
+    <li class="q5">
+      <h3 class="titrequestion">
+        question 5: Qui est le premier acteur a avoir incarner la celebre araignée au cinéma dans les années 2000 ?
+      </h3>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_5" id="q5c1" value="0">
+        <label for="q5c1">1</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="grepquestion" name="rep_5" id="q5c2" value="1" checked>
+        <label for="q5c2">2</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_5" id="q5c3" value="0">
+        <label for="q5c3">3</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_5" id="q5c4" value="0">
+        <label for="q5c4">4</label>
+      </ul>
+    </li>
+  </div>
+  <div class="question">
+    <li class="q6">
+      <h3 class="titrequestion">
+        question 6: Quelle est la série de films SPIDER-MAN jouée par Andrew Garfield ?
+      </h3>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_6" id="q6c1" value="0">
+        <label for="q6c1">1</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="grepquestion" name="rep_6" id="q6c2" value="1" checked>
+        <label for="q6c2">2</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_6" id="q6c3" value="0">
+        <label for="q6c3">3</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_6" id="q6c4" value="0">
+        <label for="q6c4">4</label>
+      </ul>
+    </li>
+  </div>
+  <div class="question">
+    <li class="q7">
+      <h3 class="titrequestion">
+        question 7 : Quel SPIDER-MAN est cappable de devenir invisible ?
+      </h3>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_7" id="q7c1" value="0">
+        <label for="q7c1">1</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_7" id="q7c2" value="0">
+        <label for="q7c2">2</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_7" id="q7c3" value="0">
+        <label for="q7c3">3</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="grepquestion" name="rep_7" id="q7c4" value="1" checked>
+        <label for="q7c4">4</label>
+      </ul>
+    </li>
+  </div>
+  <div class="question">
+    <li class="q8">
+      <h3 class="titrequestion">
+        question 8: Qui incarne le symbiot Carnage ?
+      </h3>
+      <ul>
+        <input type="checkbox" class="grepquestion" name="rep_8" id="q8c1" value="1" checked>
+        <label for="q8c1">1</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_8" id="q8c2" value="0">
+        <label for="q8c2">2</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_8" id="q8c3" value="0">
+        <label for="q8c3">3</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_8" id="q8c4" value="0">
+        <label for="q8c4">4</label>
+      </ul>
+    </li>
+  </div>
+  <div class="question">
+    <li class="q9">
+      <h3 class="titrequestion">
+        question 9: Quel est le nom de SCARLET-SPIDER ?
+      </h3>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_9" id="q9c1" value="0">
+        <label for="q9c1">1</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_9" id="q9c2" value="0">
+        <label for="q9c2">2</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_9" id="q9c3" value="0">
+        <label for="q9c3">3</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="grepquestion" name="rep_9" id="q9c4" value="1" checked>
+        <label for="q9c4">4</label>
+      </ul>
+    </li>
+  </div>
+  <div class="question">
+    <li class="q10">
+      <h3 class="titrequestion">
+        question 10: Quel est le premier super vilain que spider-man doit affronter dans la triologie des années 2000 ?
+      </h3>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_0" id="q10c1" value="0" >
+        <label for="q10c1">1</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_0" id="q10c2" value="0" >
+        <label for="q10c2">2</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="grepquestion" name="rep_0" id="q10c3" value="1" checked >
+        <label for="q10c3">3</label>
+      </ul>
+      <ul>
+        <input type="checkbox" class="repquestion" name="rep_0" id="q10c4" value="0" >
+        <label for="q10c4">4</label>
+      </ul>
+    </li>
+  </div>
+</form>
+</body>
+</html>
